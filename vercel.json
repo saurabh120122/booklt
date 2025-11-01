@@ -7,14 +7,14 @@
       "config": { "distDir": "dist" }
     },
     {
-      "src": "api/index.js",
+      "src": "backend/index.js",
       "use": "@vercel/node"
     }
   ],
   "rewrites": [
     {
       "source": "/api/v1/(.*)",
-      "destination": "/api/index.js"
+      "destination": "/backend/index.js"
     },
     {
       "source": "/(.*)",
